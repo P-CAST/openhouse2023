@@ -1,7 +1,7 @@
 import {unified} from "unified"
-import remarkRehype from 'remark-rehype'
+import remarkParse from 'remark-parse'
 
 export default async function markdownToHtml(markdown: string) {
-  const result = await unified().use(remarkRehype).process(markdown)
+  const result = await unified().use(remarkParse).parse(markdown)
   return result.toString()
 }
