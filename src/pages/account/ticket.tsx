@@ -117,7 +117,6 @@ const Page = () => {
                 options={{
                   type: "image/jpeg",
                   quality: 0.5,
-                  level: "M",
                   scale: 4,
                   width: 104,
                   color: {

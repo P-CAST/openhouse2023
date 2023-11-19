@@ -1,7 +1,7 @@
-import html from "remark-html"
-import remark from "remark"
+import {unified} from "unified"
+import remarkRehype from 'remark-rehype'
 
 export default async function markdownToHtml(markdown: string) {
-  const result = await remark().use(html).process(markdown)
+  const result = await unified().use(remarkRehype).process(markdown)
   return result.toString()
 }

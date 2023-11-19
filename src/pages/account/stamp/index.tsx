@@ -99,7 +99,6 @@ export default function QrGen() {
                 options={{
                   type: "image/jpeg",
                   quality: 0.5,
-                  level: "M",
                   scale: 4,
                   width: 180,
                   color: {
